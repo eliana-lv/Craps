@@ -1,13 +1,11 @@
 
 /**
- * Write a description of class Die here.
- *
+ * Die Class
  * @author Eliana LV
  * @version 01-11-21
  */
 public class Die
 {
-    // instance variables - replace the example below with your own
     private int dice1;
     private int dice2;
     /**
@@ -23,15 +21,13 @@ public class Die
      */
     public void rollDie()
     {
-        dice1 = (int) (Math.random() * 6);
-        dice2 = (int) (Math.random() * 6 );
+        dice1 = (int) (Math.random() * 6 +1);
+        dice2 = (int) (Math.random() * 6 +1 );
     }
     
     /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
+     * calculates sum of the two die and returns result.
+     * @return    the sum of dice1 and dice2
      */
     public int getResults()
     {
