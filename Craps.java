@@ -31,7 +31,7 @@ public class Craps
             Scanner in = new Scanner(System.in);
             System.out.println("Do you need instructions? (Y/N)");
             String answer = in.nextLine();
-            if (answer.equalsIgnoreCase("Y"))
+            if (answer.substring(0,1).equalsIgnoreCase("Y"))
             {
                 getInstructions();
             }
@@ -67,17 +67,15 @@ public class Craps
                     in.nextLine();
                     Die again = new Die(); //not specific to a
                     again.rollDie();
-                    int rollAgain = again.getResults(); //do not declare again 
+                    int rollAgain = again.getResults(); //do not declare again
                     System.out.println("You rolled a " +rollAgain);
                     if (rollAgain == point)
                     {
-                        System.out.println("You rolled a " +rollAgain);
                         System.out.println("Congratulations! You Win!");
                         KeepPlaying = false; //breaks playing loop
                     }
                     else if(rollAgain == 7)
                     {
-                        System.out.println("You rolled a " +rollAgain);
                         System.out.println("You lose!");
                         KeepPlaying = false; 
                     }
@@ -85,7 +83,8 @@ public class Craps
                 System.out.println("Good game!");
             }
             System.out.println("Do you want to play again?(Y/N): "); //loops while true
-            if (in.nextLine().equalsIgnoreCase("N"))
+            answer = in.nextLine();
+            if (answer.substring(0,1).equalsIgnoreCase("N"))
             {
                 break;
             }
