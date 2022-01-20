@@ -31,7 +31,6 @@ public class Die
      */
     public int getResults()
     {
-        // put your code here
-        return dice1 + dice2;
+        return dice1 + dice2; //adds two dice before main game 
     }
 }
