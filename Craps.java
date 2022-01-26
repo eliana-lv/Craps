@@ -91,3 +91,33 @@ public class Craps
         }
     }
 }
+
+/*
+
+COMMENTS FROM THE INSTRUCTOR:
+
+This is a perfectly functional little program, Eliana, that correctly implements
+the rules of the game of Craps--nice work!
+
+There is always room for improvement, however! ;)  Here are a couple of things I
+noticed.
+
+1. You have a boolean variable `KeepPlaying`. You should name variables with a
+   lowercase first letter, and use uppercase first letters for class names. That's
+   not a Java rule, but that's a rule that all Java programmers have decided to 
+   follow, and you should, too.
+
+2. You have some Yes/No questions that the user has to answer in the game, and  
+   one of the details metioned in the handout was implementing a "default value"
+   for these questions, so that the user can indicate Yes (or No) simply by
+   hitting the [Enter] key. That's a really useful feature that makes playing the
+   game much better. You should take a look at that part of the assignment and
+   use it in future projects.
+
+Otherwise, this is just wonderful. I'm looking forward to seeing more of your work
+in our upcoming projects!
+
+SCORE: 48/50
+
+*/
+
